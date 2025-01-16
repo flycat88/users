@@ -5,7 +5,7 @@ This is a simple user management API using default laravel tools.
 
 To set up;
 
-1. Clone the project to your computer using: ``` git clone https://github.com/cat99/users.git ```
+1. Clone the project to your computer using: ``` git clone https://github.com/flycat88/users.git ```
 
 2. Run ``` composer install ``` to install project dependencies.
 
