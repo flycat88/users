@@ -5,9 +5,7 @@ This is a simple user management API using default laravel tools.
 
 To set up;
 
-1. Clone the project to your computer using: 
-
-``` git clone https://github.com/cat99/user ```
+1. Clone the project to your computer using: ``` git clone https://github.com/cat99/users.git ```
 
 2. Run ``` composer install ``` to install project dependencies.
 
@@ -24,18 +22,18 @@ __Note__: Ensure ``` php ``` and ``` mariadb ``` is installed in your computer f
 
 ### Get Single User
 
-Send a ``` GET``` request to the endpoint: ``` http://localhost:3000/api/users/{id} ```, with ```{id}``` being an ID for a user
+Send a ```GET``` request to the endpoint: ``` http://localhost:3000/api/users/{id} ```, with ```{id}``` being an ID for a user
 
 ### Get Users (with pagination)
 
-Send a ``` GET``` request to the endpoint: ``` http://localhost:3000/api/users/page=1&limit=10 ```.
+Send a ```GET``` request to the endpoint: ``` http://localhost:3000/api/users/page=1&limit=10 ```.
 
-The ``` limit ``` parameter sets the number of records per page, while ``` page ``` sets the page number
+The ```limit``` parameter sets the number of records per page, while ``` page ``` sets the page number
 
 
 ### Add a User
 
-Send a ``` POST``` request to the endpoint: ``` http://localhost:3000/api/users/ ```, with the data formatted as: 
+Send a ```POST``` request to the endpoint: ```http://localhost:3000/api/users/```, with the data formatted as: 
 
 ```
 {
@@ -47,7 +45,7 @@ Send a ``` POST``` request to the endpoint: ``` http://localhost:3000/api/users/
 
 ### Edit a User
 
-Send a ``` PUT``` request to the endpoint: ``` http://localhost:3000/api/users/ ```, with the data formatted as: 
+Send a ```PUT``` request to the endpoint: ```http://localhost:3000/api/users/```, with the data formatted as: 
 
 ```
 {
@@ -61,4 +59,4 @@ The fields are optional, but at least one field is required
 
 ### Delete Single User
 
-Send a ``` DELETE``` request to the endpoint: ``` http://localhost:3000/api/users/{id} ```, with ```{id}``` being an ID for a user
+Send a ```DELETE``` request to the endpoint: ```http://localhost:3000/api/users/{id}```, with ```{id}``` being an ID for a user
