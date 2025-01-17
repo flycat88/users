@@ -11,13 +11,17 @@ class UserController extends Controller
     /**
      * Display a listing of the resource.
      */
-    public function index()
+    public function index(Request $request)
     {
-        $users = User::paginate(10);
+        $limit = $request->query('limit');
+        if (!empty($limit)) {
+            $users = User::paginate($limit)->all();
+        } else {
+            $users = User::all();
+        }
+        
         return response()->json($users);
     }
-
-
 
     /**
      * Store a newly created resource in storage.
@@ -82,12 +86,12 @@ class UserController extends Controller
     {
        $user = User::find($id);
 
-    if (!$user) {
-        return response()->json(['message' => 'User not found'], 404);
-    }
+        if (!$user) {
+            return response()->json(['message' => 'User not found'], 404);
+        }
 
-    $user->delete();
+        $user->delete();
 
-    return response()->json(['message' => 'User deleted successfully']);
+        return response()->json(['message' => 'User deleted successfully']);
     }
 }
