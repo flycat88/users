@@ -38,7 +38,7 @@ Send a ```POST``` request to the endpoint: ```http://localhost:3000/api/users/``
 ```
 {
   "name": "Cathy Wacu",
-  "email": "cathywachu88@gmail.com",
+  "email": "example@gmail.com",
   "password": "foureyes"
 }
 ```
@@ -50,7 +50,7 @@ Send a ```PUT``` request to the endpoint: ```http://localhost:3000/api/users/```
 ```
 {
   "name": "Cathy Wacu",
-  "email": "cathywachu88@gmail.com"
+  "email": "example@gmail.com"
 }
 ```
 
